@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build and Publish to Package Manager
-        uses: rstudio/actions/package-manager-publish-python@main
+        uses: jvroberts/actions/package-manager-publish-python@package-manager-publish
         with:
           url: ${{ secrets.PPM_URL }}
           api-token: ${{ secrets.PPM_API_TOKEN }}
